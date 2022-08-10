@@ -31,7 +31,7 @@
               <a href="./portfolio.html" class="link active-link header-link"> Портфоліо</a>
             </li>
             <li class="nav-item">
-              <a href="" class="link active-link header-link">Контакти</a>
+              <a href="./test.html" class="link active-link header-link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="btn hero-btn">Замовити послугу</button>
+          <button data-modal-open type="button" class="btn main-btn hero-btn">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -457,6 +459,65 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
+          <form name="call_back_form">
+            <label class="modal-label">
+              <span class="label-name">Ім'я</span>
+              <div class="input-area">
+                <input type="name" name="call-back-name" class="modal-input" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="modal-label">
+              <span class="label-name">Телефон</span>
+              <div class="input-area">
+                <input type="tel" name="call-back-tel" class="modal-input" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="modal-label">
+              <span class="label-name">Пошта</span>
+              <div class="input-area">
+                <input type="mail" name="call-back-email" class="modal-input" />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="modal-label">
+              <span class="label-name">Коментар</span>
+              <textarea
+                name="comment"
+                rows="10"
+                name="call-back-сomment"
+                class="comment-area"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+
+            <label class="terms">
+              <input
+                type="checkbox"
+                name="terms"
+                value="agree"
+                class="terms-checkbox visually-hidden"
+              />
+              <span class="checkbox-icon"></span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="link terms-link">Умови договору</a>
+            </label>
+
+            <button type="submit" class="btn modal-submit main-btn">Відправити</button>
+          </form>
         </div>
       </div>
     </main>
@@ -548,6 +609,28 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="subscribe">
+          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <form name="subscribe-form">
+            <!-- <label for="footer-email" class="footer-label">E-mail</label> -->
+            <div class="input-flex">
+              <input
+                type="email"
+                id="footer-email"
+                name="subscribe-email"
+                class="footer-input"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="btn subscribe-btn main-btn">
+                Підписатися
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
